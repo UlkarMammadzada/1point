@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+
+
+
+/* header start */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    background-color:  rgb(15,25,35);
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+}
+
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.header a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    transition: 0.8s;
+}
+
+
+.header figure img{
+    width: 150px;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header li{
+    margin-left: 20px;
+}
+
+.header a:hover{
+    color: rgb(244, 244, 99)
+}
+
+.header .social ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(69, 71, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .social ul li:hover a{
+    color: rgb(69, 71, 73);
+}
+.header .social ul li:hover{
+    background-color: rgb(244, 244, 99);
+}
+
+
+/* main start */
+/* introduction */
+.introduction{
+    background-image: url(../images/bg-picture.jpg);
+    height: 85vh;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding: 73px;
+    
+
+ }    
+ 
+ .introduction .container{
+    position: relative;
+    padding: 35px;
+ }
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255,255,255,0.75);
+    
+}
+
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.intro form{
+    width: 280px;
+    height: 400px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(15,25,35);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+   
+}
+
+
+.intro form h2{
+    font-size: 30px;
+     color:  rgb(15,25,35);
+     font-family: Cab, sans-serif;
+}
+
+
+.intro form input{
+    width: 230;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid rgba(141, 134, 134, 0.719);
+    font-family: Tahoma, sans-serif;
+}
+
+
+.intro form input:focus{
+    border-bottom: 2px solid rgb(250,200,25);
+    outline: none;
+}
+
+
+.intro form button{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid rgb(250,200,25);
+    background: rgb(250,200,25);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 35px 0 20px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    transition:0.2s;
+} 
+
+
+
+
+form button:hover{
+    background-color: rgb(230, 188, 37);
+    color: #fff;
+    
+}
+
+
+.content{
+    width: 500px;
+    height: 400px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.content h1{
+    width: 100%;
+    color: rgb(15,25,35);
+    font-size: 32px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+ 
+}
+
+
+.content .underline{
+    width: 90px;
+    height: 5px;
+    border-radius: 15px;
+    z-index: 15;
+    background: #fac819;
+   
+
+}
+
+.content p{
+    text-align: center;
+    color: #555;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: Cab, sans-serif;
+    }
+
+    /* introduction ends */
+
+
+
+    /* advantages */
+
+    .advantages .adv-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+.advantages h3{
+    font-size: 35px;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 2;
+    
+}
+
+.advantages .advantages-underline{
+    width: 90px;
+    height: 5px;
+    border-radius: 15px;
+    z-index: 15;
+    background: #fac819;
+ }
+/* advantages end */
+
+ /* card groups */
+
+ .advantages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+   
+ }
+
+
+ .card-group{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+   
+ }
+
+
+ .card-group figure{
+    width: 260px;
+    height: 352px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* margin-left: 20px; */
+    padding: 30px;
+    
+ }
+
+ .card-group figure .icon{
+    width: 100px;
+    height: 100px;
+    rotate: 45deg;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgba(250, 200, 25, .3), transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250,200,25);
+    font-size: 60px;
+    line-height: 40px;
+    text-shadow: 1px 1px rgb(0 0 0 / 50%);
+    margin-bottom: 35px;
+ }
+
+ .card-group figure .icon i{
+    rotate: -45deg;
+
+ }
+
+
+ .advantages h4{
+    
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px !important;
+    margin: 20px 0 5px;
+ }
+
+ .advantages p{
+    color: #555;
+    line-height: 1.5;
+ }
+ .advantages h4, p{
+    font-size: 18px;
+    display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+
+/* cards end */
+
+
+/* how it works */
+
+.how-it-works{
+    
+    background: rgb(50,60,70);
+    margin-top: 100px;
+}
+
+
+.work-process{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.work-process .underline{
+    width: 100px;
+    height: 5px;
+    border-radius: 15px;
+    background: #fac819;
+    margin: 20px 160px 20px;
+
+}
+
+.work-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.work-process h1{
+    font-size: 32px;
+    font-family: Cab;
+    font-weight: 300;
+    color: #fff;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 110px;
+}
+.work-process h3{
+    text-align: center;
+    padding: 0 90px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 15px;
+    color: #fff;
+    line-height: 1.8;
+    font-family: Cab, sans-serif;
+    
+    
+
+}
+
+
+.video-side img{
+    margin: 65px 35px;
+    width: 400px;
+    height: 250px;
+    border: 2px solid white;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+ 
+}
+
+.play-button-click{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient( rgba(250, 200, 25, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+    border-radius: 50%;
+    top: 1405px;
+    right: 29%;
+    cursor: pointer;
+    box-shadow: 0 0 25px 3px rgb(250 200 25 / 80%);
+    
+
+    
+}
+
+
+.video-side .play-button{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid white;
+  }
+
+
+  /* partners */
+
+  .partners{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  
+  }
+
+
+  .all-partners{
+
+    display: flex;
+    width: 100%;
+
+  }
+
+  .partners-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    margin-left: 180px;
+  }
+
+  .all-partners img{
+    width: 140px;
+    margin-left: 50px;
+  }
+
+  .all-partners ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    margin-left: 70px;
+  }
+
+  .all-partners h1{
+    font-size: 32px;
+    font-family: Cab, sans-serif;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+
+  }
+
+  .underline{
+    width: 90px;
+    height: 5px;
+    border-radius: 15px;
+    background: #fac819;
+    margin: 25px 0 25px;
+ }
+  
+
+  .all-partners p{
+    text-align: center;
+    color: #555;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+
+  }
+
+
+
+  /* footer */
+
+  footer{
+    background-color: rgb(15,25,35);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding: 60px 0;
+  }
+
+  .footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/footer-map.png) ;
+    background-position: center;
+    background-color: rgb(15,25,35);
+    background-repeat: no-repeat;
+    
+  }
+
+
+  .footer .underline{
+    width: 100px;
+    height: 2px;
+    border-radius: 15px;
+    background-color:  #707070;
+    margin: 20px ;
+  }
+
+  .footer a{
+    color: #d0d0d0;
+  }
+
+  .footer ul li{
+    margin-bottom: 10px;
+  }
+
+  a .company :hover{
+    color: #fac819;
+  }
+
+  .footer a li:hover{
+    color: #fac819;
+}
+
+
+.footer .social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+   }
+
+
+.footer .social a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40,50,60);
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    
+}
+
+.social a i:hover{
+    background-color: rgba(250,200,25,1);
+    color: black;
+}
+
+
+.footer .finmarket{
+    margin-bottom: 50px;
+}
+
+
+ .to-top{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: rgba(250,200,25,1);
+    border-radius: 50%;
+    bottom: 10px;
+    left: 1450px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+} 
+
+
+.to-top span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    top: 12px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    
+}
+
+
+ 
+ 
+
+
